@@ -24,8 +24,8 @@ public class SoftAssertsDemo extends TestBase {
         WebElement loginButton = driver.findElement(By.id("logonButton"));
         WebElement titleHeader = driver.findElement(By.cssSelector("h3"));
 
-        softAssert.assertFalse(userName.isDisplayed());
-        softAssert.assertFalse(password.isDisplayed());
+        softAssert.assertTrue(userName.isDisplayed());
+        softAssert.assertTrue(password.isDisplayed());
         softAssert.assertTrue(titleHeader.isDisplayed());
 
 
